@@ -1,5 +1,6 @@
 import { render, screen, fireEvent, waitFor } from '@testing-library/react';
 import App from './App';
+import '@testing-library/jest-dom';  // no '/extend-expect' needed
 
 // Mock the UploadSection component to simulate file upload behavior
 jest.mock('./components/UploadSection', () => ({
